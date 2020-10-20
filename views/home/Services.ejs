@@ -1,0 +1,61 @@
+<!--Services Page-->
+<%- include('../_partial/_header'); -%>
+
+<h1>Welcome to the Services Page</h1>
+
+<article>
+    <h2>Course selections</h2>
+    <form>
+       <input type="checkbox" id="item1"  />
+       <label for="item1">Porgramming 1 ($100.00)</label>
+       <input type="checkbox" id="item2"  />
+       <label for="item2">Porgramming 2 ($200.00)</label>
+       <input type="checkbox" id="item3" />
+       <label for="item3">Kali Linux ($150.00)</label>
+       <input type="checkbox" id="item4" />
+       <label for="item4">Web Application ($130.00)</label>
+       <input type="checkbox" id="item5"  />
+       <label for="item5"> Java ($130.00) </label>
+       <input type="button" value="Submit" id="sButton" />
+
+       
+       <script language="javascript">
+           var button = document.getElementById("sButton");
+           button.onclick = function(){
+               alert("Great thanks for choosing");
+           }
+       </script>
+    </form>
+    
+ </article>
+ <!--Create form of course selection-->
+<!--CSS-->
+ <style>
+   input[type=text], select, textarea {
+ width: 100%;
+ padding: 12px; 
+ border: 1px solid #ccc;
+ border-radius: 4px; 
+ box-sizing: border-box; 
+ margin-top: 6px; 
+ margin-bottom: 16px; 
+ 
+}
+
+input[type=submit] {
+
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ 
+ 
+}
+
+.container {
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 20px;
+}
+</style>
+
+<%- include ('../_partial/_footer'); -%>
