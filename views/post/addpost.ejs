@@ -1,0 +1,46 @@
+<%- include('../_partial/_header'); -%>
+
+
+
+<div class="row">
+    <div class="col-md-6">
+        <h1>New Contact</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">
+        <form action="/posts/add" method="POST">
+            <div class="form-group">
+
+                <label for="inputTitle">Name</label>
+                <input type="text" class="form-control" placeholder="Name" id="inputTitle" name="title">
+            </div>
+
+            <div class="form-group">
+                <label for="inputContent">Please fill out the number </label>
+                
+                <textarea class="form-control" rows="3" id="inputContent" placeholder="Content" name="content"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="inputContent">Please fill out the Email Address</label>
+                
+                <textarea class="form-control" rows="3" id="inputContent" placeholder="Content1" name="content1"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-default" href="#" role="button">Create</button>
+                <button type="cancel" class="btn btn-default" href="#" role="button"><a href="/detailpost">Cancel</a></button>
+            </div>
+    </div>
+
+    </form>
+</div>
+
+
+
+
+
+
+<%- include ('../_partial/_footer'); -%>
